@@ -1,0 +1,7 @@
+out/
+tmp/
+*.img
+*.zip
+*.log
+*.bak
+.cache/
