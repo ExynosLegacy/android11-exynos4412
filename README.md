@@ -1,4 +1,6 @@
-# Android 11 for Exynos 4412
+# ExynosLegacy Platform
+
+## ExynosLegacy Android 11
 
 Professional Android 11 platform for Samsung Exynos 4412 devices.
 
