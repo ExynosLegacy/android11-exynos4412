@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!--
+        ExynosLegacy Platform
+        Android 11
+        Platform Baseline 1.0
+    -->
+
+    <!-- Platform -->
+
+    <project
+        path="kernel/samsung/smdk4412"
+        name="html6405/android_kernel_samsung_smdk4412"
+        revision="lineage-18.1" />
+
+    <project
+        path="device/samsung/smdk4412-common"
+        name="html6405/android_device_samsung_smdk4412-common"
+        revision="lineage-18.1" />
+
+    <project
+        path="device/samsung/n80xx-common"
+        name="html6405/android_device_samsung_n80xx-common"
+        revision="lineage-18.1" />
+
+    <project
+        path="device/samsung/n8000"
+        name="html6405/android_device_samsung_n8000"
+        revision="lineage-18.1" />
+
+    <project
+        path="device/samsung/n8010"
+        name="html6405/android_device_samsung_n8010"
+        revision="lineage-18.1" />
+
+    <project
+        path="hardware/samsung"
+        name="html6405/android_hardware_samsung"
+        revision="lineage-18.1" />
+
+    <project
+        path="packages/apps/SamsungServiceMode"
+        name="LineageOS/android_packages_apps_SamsungServiceMode"
+        revision="lineage-18.1" />
+
+</manifest>

@@ -20,12 +20,37 @@ case "$COMMAND" in
         cmd_doctor
         ;;
 
-    *)
+    bootstrap)
+        source "$SCRIPT_DIR/commands/bootstrap_build_host.sh"
+        cmd_bootstrap
+        ;;
+
+    manifest)
+        source "$SCRIPT_DIR/commands/manifest.sh"
+        cmd_manifest
+        ;;
+
+    env)
+        source "$SCRIPT_DIR/commands/env.sh"
+        cmd_env
+        ;;
+
+    help)
         echo "ExynosLegacy Project Manager"
         echo
-        echo "Usage:"
-        echo "  project status"
-        echo "  project doctor"
+        echo "Available commands:"
+        echo "  status"
+        echo "  doctor"
+        echo "  bootstrap"
+        echo "  manifest"
+        echo "  env"
+        ;;
+
+    *)
+        echo "Unknown command: $COMMAND"
+        echo
+        echo "Run:"
+        echo "  project help"
         exit 1
         ;;
 esac
