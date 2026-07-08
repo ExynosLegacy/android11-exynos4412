@@ -1,0 +1,20 @@
+project:
+  name: ExynosLegacy Platform
+  product: ExynosLegacy Android 11
+  repository: android11-exynos4412
+  organization: ExynosLegacy
+  version: 0.1.0
+
+documentation:
+  language: en
+  version: Foundation 1.0
+
+android:
+  version: 11
+  branch: android11
+
+hardware:
+  soc: Exynos4412
+
+project_manager:
+  version: 0.1.0

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+source "$SCRIPT_DIR/lib/common.sh"
+source "$SCRIPT_DIR/lib/ui.sh"
+
+COMMAND="${1:-help}"
+
+case "$COMMAND" in
+    status)
+        source "$SCRIPT_DIR/commands/status.sh"
+        cmd_status
+        ;;
+
+    doctor)
+        source "$SCRIPT_DIR/commands/doctor.sh"
+        cmd_doctor
+        ;;
+
+    *)
+        echo "ExynosLegacy Project Manager"
+        echo
+        echo "Usage:"
+        echo "  project status"
+        echo "  project doctor"
+        exit 1
+        ;;
+esac
